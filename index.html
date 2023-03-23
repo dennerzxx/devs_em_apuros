@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devs em Apuros - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="img/pc.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Devs em Apuros
+              </a>
+            </div>
+          </nav>
+    </header>
+    <table>
+        <main>
+            <section class="container">
+                <hr>
+				<table>
+					<thead>
+						<tr>
+							<th>Funcionário</th>
+							<th>Trabalho</th>
+							<th>Cargo</th>
+							<th>Data de Inicio</th>
+							<th>Data de Termino(Prévia)</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-funcionario">
+						<tr class="dev" id="primeiro-dev">
+							<td class="info-nome">Vitor Ribeiro</td>
+							<td class="info-work">Atualização de Sistema</td>
+							<td class="info-unidade">Dev. Júnior</td>
+							<td class="info-data_in">10/01/2023</td>
+							<td class="info-data_ter">15/01/2023</td>
+						</tr>
+
+						<tr class="dev" >
+							<td class="info-nome">Kauan Vinnicius</td>
+							<td class="info-work">Gerente dos Sistemas</td>
+							<td class="info-unidade">Dev. Gerente</td>
+							<td class="info-data_in">01/01/2023</td>
+							<td class="info-data_ter">01/01/2024</td>
+						</tr>
+
+						<tr class="dev" >
+							<td class="info-nome">Athila Denner</td>
+							<td class="info-work">Analista de Sistemas</td>
+							<td class="info-unidade">Dev. Sênior - Sócio</td>
+							<td class="info-data_in">01/01/2022</td>
+							<td class="info-data_ter">Indeterminado</td>
+						</tr>
+
+						<tr class="dev">
+							<td class="info-nome">Casemiro</td>
+							<td class="info-work">Designer Gráfico</td>
+							<td class="info-unidade">Estagiário</td>
+							<td class="info-data_in">21/03/2023</td>
+							<td class="info-data_ter">21/06/2023</td>
+						</tr>
+						<tr class="dev" >
+							<td class="info-nome">Neymar JR</td>
+							<td class="info-work">Logo Maker</td>
+							<td class="info-unidade">Dev. Sênior - Sócio</td>
+							<td class="info-data_in">01/01/2022</td>
+							<td class="info-data_ter">Indeterminado</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+            <section>
+                <form id="form-adiciona">
+                    <div class="mb-3">
+                      <label for="exampleInput" class="form-label">Nome do Funcionário</label>
+                      <input type="text" class="form-control" id="nome" name="nome" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Trabalho Atual</label>
+                      <input type="text" class="form-control" id="trabalho" name="trabalho">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInput" class="form-label">Cargo</label>
+                        <select id="cargo" name="cargo" class="opcao">
+                            <option value="Dev. Júnior">Dev. Júnior</option>
+                            <option value="Dev. Sênior">Dev. Sênior</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInput" class="form-label">Data de Inicio</label>
+                        <input type="date" class="form-control" id="data_in">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInput" class="form-label">Data de Termino</label>
+                        <input type="date" class="form-control" id="data_ter">
+                    </div>
+                    <button type="submit" id="botaoAdd" class="btn btn-primary">Cadastrar</button>
+                  </form>
+            </section>
+        </main>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="js/remover-funcionario.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
